@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "UTF-8">
+            <title>task2-6</title>
+            <link rel="stylesheet" href="prac2.css">
+                <style>
+                 
+                .div1{
+                    background-color:white;
+                    border: 1px solid darkgrey;
+                    border-radius: 8px;
+                }
+                
+                </style>
+                </head>
+    <body>
+        <div class="div1">
+            <h1>This is new heading font is much more elegant</h1>
+            <p>We've updated the font for headings to a more elegant one from Google Fonts: Raleway.<br>Note that for this to not break previous pages, sans-serif should still be present as a fallback.</p>
+            <h2>L2 heading font is also Raleway</h2>
+            <p>Similarly, the default font is now Noto Serif from Google Fonts<br>Again, for this to not break previous pages, serif should still be present as a fallback.</p>
+            <p>This multi-line quote from http://example.example also uses the Raleway font, and is dimgrey with a line-height of 1.5, wording-spacing of 0.2em, and justified.</p>
+            <h4>L4 Heading are Raleway, italic, underlined and a normal font-weight</h4>
+                <p>Check out the sweet social media icons below, using the fontawesome icon set.<br>They are colored #BFCFD4</p>
+                <hr>
+              </div>
+        
+    </body>
+</html>
+

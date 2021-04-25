@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prac 8</title>
+    <meta content="">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>.button-success {background: rgb(28, 184, 65);color: white;}</style>
+  </head>
+  <body>
+  
+    <div id="main">
+  
+        <h1>My Blog</h1>
+        <hr />
+        <div id="newpost">
+            <h2>Add a post</h2>
+            <form class="pure-form">
+
+                <fieldset class="pure-group">
+                    <input id="title" type="text" class="pure-input-1-2" placeholder="Blog post title">
+                    <textarea id="content" class="pure-input-1-2" placeholder="Blog Post Content"></textarea>
+                </fieldset>
+
+                <button onclick="button1()" type="button" class="pure-button pure-input-1-2 pure-button-primary" >make post</button>
+            </form>
+        </div>
+        <hr />
+        <div id="posts" >
+            <h2>Current Posts</h2>
+            <form class="pure-form">
+                <button onclick="button2()" type="button" class="pure-button pure-input-1-2 pure-button-primary">show all posts</button>
+            </form>
+            <div v-for="item in items">
+                <h2>{{item.title}}</h2>
+                <p>{{item.content}}</p>
+           </div>
+        </div>
+        
+        <div id="tcs" style="display: none;">
+            <h2>Terms and Conditions</h2>
+            <p>All your base are belong to us.</p>
+            <button class="pure-button button-success">Accept</button>
+        </div>
+    
+    </div>
+    <script>
+        var vue=new Vue({
+                            el: '#posts',
+                            data:{
+                            items:[]
+                            }
+        })
+        
+        function button1() {
+                              // Create new AJAX request
+                              var xhttp = new XMLHttpRequest();
+                              var object;
+                              object={title: document.getElementById("title").value, content: document.getElementById("content").value};
+                              // Define behaviour for a response
+                              xhttp.onreadystatechange = function() {
+                                if (this.readyState == 4 && this.status == 200) {
+                                }
+                              };
+                              // Initiate connection
+                              xhttp.open("POST", "/users/addpost", true);
+                              xhttp.setRequestHeader("Content-type", "application/json");
+                              // Send request
+                              xhttp.send(JSON.stringify(object));
+                              }
+    
+    function button2() {
+        var postdata=[];
+        // Create new AJAX request
+        var xhttp = new XMLHttpRequest();
+        // Define behaviour for a response
+                          xhttp.onreadystatechange = function() {
+                            if (this.readyState == 4 && this.status == 200) {
+                             postdata=JSON.parse(this.response);
+                             vue.items=postdata;
+                             console.log(vue.items);
+                            }
+                          };
+                          xhttp.open("GET", "/users/getposts?n="+encodeURIComponent(5), true);
+                          // Send request
+                          xhttp.send();
+    }
+    
+
+    </script>
+  </body>
+</html>

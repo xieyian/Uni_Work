@@ -1,0 +1,1 @@
+SELECT customer.first_name, customer.last_name, rental.rental_date FROM customer, rental WHERE customer.customer_id=rental.customer_id AND return_date IS NULL ORDER BY rental_date ASC LIMIT 1;

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "UTF-8">
+            <title>task2-8</title>
+            </head>
+    <body>
+        <h1 style="text-align:center;">This centered heading is <i>emphasised just here</i></h1>
+        <p>this is a <del>normal paragraph</del><strong> paragraph of great importance!</strong></p>
+        <p>Another paragraph with some text tha goes from <b>hold to <i>bold and italic to</i></b><i> just italic.</i></p>
+        <hr>
+        
+        <p>This third paragraph spans multiple lines,<br>And has a link to http://nyan.cat<a href="http://nyan.cat"><sup><span style="color:blue;">HERE</span></sup></a><br>It also has some <span style="color:green;"><small>small, green text</small></span> and some <span style="background-color:orange">orange highlighted text.</span>
+        </p>
+        
+        
+        
+        <pre style="font-family:courier;">
+            Mathematical formulas work well as preformatted text, like this one:
+            Log<sub>b</sub>x= Log<sub>a</sub>x/Log<sub>a</sub>b
+        </pre>
+        
+        
+        
+        
+    </body>
+</html>
+

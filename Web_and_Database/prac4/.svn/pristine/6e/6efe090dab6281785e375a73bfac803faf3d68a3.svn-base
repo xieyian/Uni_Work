@@ -1,0 +1,3 @@
+curl --request HEAD \
+  --url http://google.com/ \
+  --cookie '1P_JAR=2019-04-03-08; NID=180%3DAEu--UXBcdikxL0oUWasndvT9HSc-zMHezhsz_VMr2g_-D8qDGNLUwCGMv2CoMnjtgr74geBVJGq55pKszvvrghxlX3xcan0t2AMs2-KIquWpyNykgauKZRuz9FAKaXQUt_xpd72ph8tPRJBjhGOk_zS-2T_cJHTZJS7sljxeN8'

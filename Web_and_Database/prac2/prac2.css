@@ -1,0 +1,143 @@
+
+body{
+    background-color:ghostwhite;
+     background-image: url(rect.png) ,url(rect.png) ,url(rect.png) ;
+     background-repeat:repeat;
+     background-size: 97px, 67px, 37px;
+}
+
+h1 {
+    font-family:sans-serif;
+    color: black;
+}
+
+h2{
+    font-family: sans-serif;
+     text-align: left;
+}
+h3{
+    color: rgba(0,0,139,0.8);
+}
+pre{
+    font-family:monospace;
+}
+p {
+    font-family:serif;
+}
+del{
+    color:grey;
+}
+#back{
+    color:darkblue;
+    background:pink;
+}
+#col{
+    color:darkgreen;
+}
+#alpha{
+    color:rgb(0,0,0);
+}
+
+.transparent-text {
+    color:rgba(0,0,0,0.5);
+    font-family:monospace;
+}
+
+.blue{
+    color:blue;
+}
+.fancy{
+    font-family:cursive;
+}
+.content{
+    background-color:white;
+    border: 1px solid darkgrey;
+    border-radius: 8px;
+}
+
+div.div1{
+    background-color:white;
+    margin:auto;
+
+    border: 1px solid darkgrey;
+    border-radius: 8px;
+}
+
+div.div2{
+    text-align:right;
+    background-color: blue;
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+    /*margin-top: 10px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom:20px;*/
+}
+div.div3 {
+    text-align:right;
+    border: 1px solid red;
+    background-color: yellow;
+    padding:12px;
+    height:174px;
+    width: 674px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left:20px;
+    margin-right:20px;
+}
+div.div5 {
+    text-align:right;
+    border: 1px solid red;
+    background-color: yellow;
+    padding:12px;
+    height:374px;
+    width: 374px;
+    margin:auto;
+    
+}
+div.div4{
+    text-align:right;
+    background-color: blue;
+    border: 1px solid red;
+    padding: 0px;
+    margin-top: 10px;
+    margin-right:20px;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+.red-border{
+    border: 1px solid red;
+}
+.blue-border{
+    border: 1px solid blue;
+}
+.red-outline{
+    outline-color:red;
+    outline-style: solid;
+    outline-width: 1px;
+}
+.div1{
+    background-color:white;
+    border: 1px solid darkgrey;
+    border-radius: 8px;
+}
+.top-border{
+    border-width: 1px;
+    border-color:red;
+    border-top-style:solid ;
+    border-right-style:solid ;
+    border-left-style:solid ;
+    border-bottom-style:none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+}
+.bottom-border{
+    border: 1px solid blue;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+}
+

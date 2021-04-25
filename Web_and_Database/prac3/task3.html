@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset = "UTF-8">
+        <title>task3</title>
+        <script src = "task3.js"></script>
+        <style>
+                
+            body {
+                font-family: sans-serif;
+                background-color: white;
+            }
+            
+            .container {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .left {
+                float: left;
+            }
+            
+            .right {
+                float: right;
+            }
+            
+            .controls {
+                width: 240px;
+            }
+            
+            .date {
+                font-size: 0.8em;
+                font-weight: bold;
+                color: grey;
+            }
+            
+            h1,h2,h3 {
+                font-family: serif;
+            }
+            
+            #mcount {
+                background-color: cornflowerblue;
+                font-size: 3em;
+                margin: 0px 10px 10px 10px;
+                padding: 10px;
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+            
+            #posts {
+                border: 1px solid darkseagreen;
+                padding: 10px;
+                margin: 0px 10px 10px 150px;
+                min-height: 100px;
+            }
+            
+            hr {
+                clear: both;
+            }
+            .post-time{
+                color:grey;
+            }
+            .post-content{
+                color:black;
+            }
+        
+            
+                </style>
+            
+            </head>
+    
+    <body>
+        
+        <div id="main" class="container">
+            <button class="right" onclick = "task3_3m()">MENU</button>
+            <h1>Part 3 - Javascript Playground</h1>
+            <div id="mcount" onmouseover ="task3_1()"></div>
+            <div id="posts"></div>
+            <hr />
+            <textarea rows="4" cols="60">Type your text here...</textarea>
+            <br />
+            <div class="controls left">
+                <input type="number" name="quantity" value="1" /><br />
+                <input type="radio" name="color" value="blue" /> Blue<br />
+                <input type="radio" name="color" value="red" /> Red<br />
+                <button onclick="task3_2()">Post</button>
+            </div>
+            <div class="controls left">
+                <input type="range" name="visible" min="1" max="10" value="10"/><br />
+                <input type="checkbox" name="style" value="bold" onclick="bo()" /> Bold<br />
+                <input type="checkbox" name="style" value="italic" onclick="it()"/> Italic<br />
+                <select>
+                    <option disabled selected value="-1">Choose a post to reply to</option>
+                </select>
+            </div>
+            <hr />
+        </div>
+        
+        <div id="menu" class="container" style="display:none;">
+            <button class="right" onclick="task3_3b()">BACK</button>
+            <p>&nbsp;</p>
+            <span>Background Color:</span><input type="text" onchange="task3_5()">
+                </div>
+        
+    </body>
+    
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "UTF-8">
+            <title>task2-6</title>
+            </head>
+    <body>
+        <h1 >This page is all about pararaphs!</h1>
+
+        <p>
+Check out this paragraph;<br>
+it has a link to <a href="https://google.com">https://google.com,</a><br>
+and it spans<br>
+more than 1 line
+        </p>
+        <hr>
+        <pre style="font-family:times;">
+Have you ever used preformatted text?
+It allows you to make sweet ASCII drawings like this owl:
+ {o,o}
+./)_)
+ " "
+        </pre>
+        
+    </body>
+</html>
+
+
+
